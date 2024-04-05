@@ -24,8 +24,13 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/#">
+                <a className="nav-link" href="/">
                   Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/search">
+                  Search
                 </a>
               </li>
             </ul>

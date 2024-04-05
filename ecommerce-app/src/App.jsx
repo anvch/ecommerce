@@ -15,8 +15,8 @@ export default class App extends Component {
         <div className="container-fluid">
           <Routes>
             <Route path="/" element={<ShoppingCart />} />
+            {/* <Route path="/search" element={<SearchPage />} /> */}
             <Route path="/search" element={<SearchPage />} />
-            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
       </BrowserRouter>

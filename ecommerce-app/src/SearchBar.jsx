@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 
 const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const history = useHistory();
 
   const handleSearch = () => {
     if (searchQuery.trim() !== "") {
       // Redirect to search page with filtered results
-      history.push(`/search?q=${encodeURIComponent(searchQuery)}`);
+      window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
     }
   };
 
