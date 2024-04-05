@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
+import SearchPage from "./SearchPage";
 import ShoppingCart from "./ShoppingCart";
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
@@ -14,6 +15,7 @@ export default class App extends Component {
         <div className="container-fluid">
           <Routes>
             <Route path="/" element={<ShoppingCart />} />
+            <Route path="/search" element={<SearchPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
